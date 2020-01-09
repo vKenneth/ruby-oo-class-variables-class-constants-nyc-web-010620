@@ -27,3 +27,22 @@ describe 'Shoe' do
 end
 
 
+
+class Shoe
+  attr_accessor :shoe, :brand
+ 
+  BRANDS = []
+ 
+  def initialize(title)
+    @title = title
+  end
+ 
+  def turn_page
+    puts "Flipping the page...wow, you read fast!"
+  end
+ 
+  def genre=(genre)
+   @genre = genre
+   GENRES << genre
+ end
+end
