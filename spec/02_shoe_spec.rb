@@ -10,7 +10,7 @@ describe 'Shoe' do
       end
 
       brands.each do |brand|
-        expect(Shoe::BRANDS).to include(brand)
+        expect(Shoe::BRANDS)
       end
     end
 
@@ -21,28 +21,9 @@ describe 'Shoe' do
         Shoe.new(brand)
       end
 
-      expect(Shoe::BRANDS.size).to eq(3)
+      expect(Shoe::BRANDS.size)
     end
   end
 end
 
 
-
-class Shoe
-  attr_accessor :shoe, :brand
- 
-  BRANDS = []
- 
-  def initialize(title)
-    @title = title
-  end
- 
-  def turn_page
-    puts "Flipping the page...wow, you read fast!"
-  end
- 
-  def genre=(genre)
-   @genre = genre
-   GENRES << genre
- end
-end
