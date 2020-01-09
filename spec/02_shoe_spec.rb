@@ -11,6 +11,8 @@ describe 'Shoe' do
 
       brands.each do |brand|
         expect(Shoe::BRANDS)
+        def initialize("brands")
+          @brands = brands
       end
     end
 
